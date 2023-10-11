@@ -27,6 +27,7 @@ class SaleOrderLineStockQuant(models.Model):
                 "domain": [
                     ("id", "in", stock_quant_ids),
                     ("location_id.usage", "=", "internal"),
+                    ("quantity", ">", 0.0),
                 ],
                 "target": "new",
             }
