@@ -16,7 +16,7 @@
     "depends": ["base", "sale", "stock"],
     # always loaded
     "data": [
-        # 'views\sale_order_line_stock_quant.xml',
+        "views\sale_order_line_stock_quant.xml",
         "views\stock_quant_tree_removal_date.xml",
     ],
     # only loaded in demonstration mode
