@@ -1,5 +1,12 @@
 <odoo>
-    <data>
-
-    </data>
+    <record model="ir.ui.view" id="sale_order_stock_quant_form">
+        <field name="name">sale.order.stock.quant.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <field name="x_qty_available" position="after">
+                <button name="open_stock_quant_popup" icon="fa-search" type="object"/>
+            </field>
+        </field>
+    </record>
 </odoo>
